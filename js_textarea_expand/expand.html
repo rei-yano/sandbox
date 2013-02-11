@@ -1,0 +1,41 @@
+<html>
+<head>
+<script>
+function expand() {
+	var ta = document.getElementById('ta');
+	ta.style.height = ta.scrollHeight + "px";
+	ta.style.overflow = "visible";
+}
+
+function shurink() {
+	var ta = document.getElementById('ta');
+	ta.style.height = "50px";
+	ta.style.overflow = "auto";
+}
+</script>
+</head>
+<body>
+
+<form>
+
+<textarea id="ta" cols="20" rows="3">
+あああ
+改行1
+あああ
+改行2
+あああaaaaaaaaaaaaaaaaaaaaaaaa
+改行3
+あああ
+改行4
+あああ
+改行5
+あああ
+</textarea>
+
+<input type="button" value="expand" onClick="expand();">
+<input type="button" value="shurink" onClick="shurink();">
+
+</form>
+
+</body>
+</html>
