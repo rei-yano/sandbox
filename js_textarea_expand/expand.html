@@ -7,7 +7,7 @@ function expand() {
 	ta.style.overflow = "visible";
 }
 
-function shurink() {
+function shrink() {
 	var ta = document.getElementById('ta');
 	ta.style.height = "50px";
 	ta.style.overflow = "auto";
@@ -17,6 +17,9 @@ function shurink() {
 <body>
 
 <form>
+
+<input type="button" value="expand" onClick="expand();">
+<input type="button" value="shrink" onClick="shrink();"><br>
 
 <textarea id="ta" cols="20" rows="3">
 Ç†Ç†Ç†
@@ -31,9 +34,6 @@ function shurink() {
 â¸çs5
 Ç†Ç†Ç†
 </textarea>
-
-<input type="button" value="expand" onClick="expand();">
-<input type="button" value="shurink" onClick="shurink();">
 
 </form>
 
